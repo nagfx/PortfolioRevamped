@@ -52,7 +52,7 @@ export default function ServicesPage() {
       </div>
       <div className="mt-12 text-center">
         <p className="text-lg mb-4">
-          Interested in our services? Let's discuss your project!
+          Interested in our services? Let us discuss your project!
         </p>
         <Button asChild size="lg">
           <a href="mailto:namanshaheer@gmail.com">
