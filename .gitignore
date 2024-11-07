@@ -15,7 +15,8 @@
 # production
 /build
 
-app.zip
+# zipped files
+*.zip
 
 # misc
 .DS_Store

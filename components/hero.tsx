@@ -4,7 +4,7 @@ import { ArrowRight, Code, Palette, Zap } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="py-24 md:py-32 flex items-center justify-center">
+    <section className="py-24 md:py-32 flex items-center justify-center ">
       <div className="container px-4 md:px-6 flex flex-col items-center text-center">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between">
           <div className="flex flex-col items-center md:items-start space-y-4 text-center md:text-left md:w-1/2">
