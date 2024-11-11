@@ -69,6 +69,14 @@ const projects = [
     demoLink: "https://3d-todo-app.vercel.app/",
     codeLink: "https://3d-todo-app.vercel.app/",
   },
+  {
+    title: "Task Tracker Pro Chrome extension",
+    description: "A task tracking extension for Chrome, deployed already on the Chrome Webstore sorry repo is private for this",
+    image:
+      "/static/images/tasktracker.jpg",
+    demoLink: "https://chromewebstore.google.com/detail/task-tracker-pro/egfcbiohkjbgjbejfjpnaioinpgpkhjg",
+    codeLink: "https://chromewebstore.google.com/detail/task-tracker-pro/egfcbiohkjbgjbejfjpnaioinpgpkhjg",
+  },
 ];
 
 export function Projects() {
