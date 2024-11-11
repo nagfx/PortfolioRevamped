@@ -27,6 +27,15 @@ const projects = [
     codeLink: "https://e-commerce-website-naman.vercel.app/",
   },
   {
+    title: "A calculator application",
+    description:
+      "A frontend application built with React and Tailwindcss, responsive and simple straight forward for your reference, sorry the repo is private",
+    image:
+      "/static/images/calculator.jpeg",
+    demoLink: "https://calculator-app-scientific.vercel.app/",
+    codeLink: "https://calculator-app-scientific.vercel.app/",
+  },
+  {
     title: "Tinder Swiper (Uni edition)",
     description:
       "A frontend application (also fullstack version on Github) built keeping Tinder in mind but for University, and the algorithm was built keeping similar likes and uni in as priority for matches",
