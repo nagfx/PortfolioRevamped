@@ -11,11 +11,27 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
+    title: "N travel agency website",
+    description: "Built a travel agency website. Uses React and TailwindCss sorry code repo is private",
+    image:
+      "/static/images/ntravels.jpeg",
+    demoLink: "https://travelingnamansite.vercel.app/",
+    codeLink: "https://travelingnamansite.vercel.app/",
+  },
+  {
+    title: "Ecommerce application",
+    description: "Another react ecommerce application with a nice UI built with React. Uses React and TailwindCss sorry code repo is private",
+    image:
+      "/static/images/modernshop.jpeg",
+    demoLink: "https://e-commerce-website-naman.vercel.app/",
+    codeLink: "https://e-commerce-website-naman.vercel.app/",
+  },
+  {
     title: "Tinder Swiper (Uni edition)",
     description:
       "A frontend application (also fullstack version on Github) built keeping Tinder in mind but for University, and the algorithm was built keeping similar likes and uni in as priority for matches",
     image:
-      "https://cdn.pixabay.com/photo/2021/11/25/08/52/mountains-6822937_1280.jpg",
+      "/static/images/swiper.jpeg",
     demoLink: "https://tinder-test.vercel.app/",
     codeLink: "https://github.com/nagfx/tinder-test",
   },
@@ -24,7 +40,7 @@ const projects = [
     description:
       "Airquality application which fetches data from Transport from London API, and delivers hourly and the next day's forecast on airquality.",
     image:
-      "https://cdn.pixabay.com/photo/2020/01/23/16/00/environment-4787978_1280.jpg",
+      "/static/images/airquality.jpeg",
     demoLink: "https://nagfx.github.io/airquality-js-app/",
     codeLink: "https://github.com/nagfx/airquality-js-app",
   },
@@ -32,9 +48,17 @@ const projects = [
     title: "Airbnb frontpage",
     description: "Built a clone of Airbnb frontpage with TailwindCSS.",
     image:
-      "https://cdn.pixabay.com/photo/2017/11/12/00/08/airbnb-2941142_1280.jpg",
+      "/static/images/airbnb.jpeg",
     demoLink: "https://nagfx.github.io/airbnb-clone/",
     codeLink: "https://github.com/nagfx/airbnb-clone",
+  },
+  {
+    title: "3D ToDo (nothing 3d about it)",
+    description: "Another todo application designed with nice stylings. Uses React and TailwindCss sorry code repo is private",
+    image:
+      "/static/images/3dtodo.jpeg",
+    demoLink: "https://3d-todo-app.vercel.app/",
+    codeLink: "https://3d-todo-app.vercel.app/",
   },
 ];
 
