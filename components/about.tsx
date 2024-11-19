@@ -9,7 +9,10 @@ import { Code2, Paintbrush, Database, Lightbulb } from "lucide-react";
 
 export function About() {
   return (
-    <section className="py-24 md:py-32 flex items-center justify-center bg-secondary">
+    <section
+      id="about"
+      className="py-24 md:py-32 flex items-center justify-center bg-secondary"
+    >
       <div className="container px-4 md:px-6 flex flex-col items-center text-center">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
           About Me

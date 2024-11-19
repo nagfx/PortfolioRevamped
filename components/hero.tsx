@@ -8,7 +8,7 @@ export function Hero() {
       <div className="container px-4 md:px-6 flex flex-col items-center text-center">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between">
           <div className="flex flex-col items-center md:items-start space-y-4 text-center md:text-left md:w-1/2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-8xl bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 dark:from-blue-500 dark:via-blue-300 dark:to-green-300 text-transparent bg-clip-text animate-gradient-text">
               Hi, I'm Naman Iqbal
             </h1>
             <p className="max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
