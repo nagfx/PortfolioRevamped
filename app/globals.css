@@ -169,3 +169,55 @@
     padding-right: 1rem;
   }
 }
+
+@layer utilities {
+  .glow-on-hover {
+    @apply relative;
+  }
+  
+  .glow-on-hover::after {
+    @apply content-[''] absolute -inset-1 bg-gradient-to-r from-primary/50 to-purple-500/50 
+      opacity-0 transition-opacity duration-300 blur-xl rounded-lg -z-10;
+  }
+  
+  .glow-on-hover:hover::after {
+    @apply opacity-100;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-tilt {
+    animation: tilt 10s infinite linear;
+  }
+
+  .animate-gradient-text {
+    background-size: 200% auto;
+    animation: textGradient 8s linear infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

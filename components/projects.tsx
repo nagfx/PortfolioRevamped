@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { AnimatedCard } from "./animated-card";
 
 const projects = [
   {
@@ -84,47 +85,52 @@ export function Projects() {
       className="py-24 md:py-32 flex items-center justify-center"
     >
       <div className="container px-4 md:px-6 flex flex-col items-center text-center">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
-          My Projects
-        </h2>
+        <h2 className="glow-on-hover text-3xl font-bold mb-12">Projects</h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <Card
-              key={index}
-              className="overflow-hidden transition-transform hover:scale-105"
+            <AnimatedCard 
+              key={project.title} 
+              delay={index * 0.1}
+              className="h-full"
             >
-              <Image
-                src={project.image}
-                alt={project.title}
-                width={800}
-                height={400}
-                className="object-cover w-full h-48"
-              />
-              <CardHeader>
-                <CardTitle>{project.title}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
-              </CardHeader>
-              <CardFooter className="flex justify-between">
-                <Button asChild>
-                  <a
-                    href={project.demoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Demo
-                  </a>
-                </Button>
-                <Button variant="outline" asChild>
-                  <a
-                    href={project.codeLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Code
-                  </a>
-                </Button>
-              </CardFooter>
-            </Card>
+              <Card className="h-full group hover:border-primary/50 transition-all duration-300">
+                <CardHeader>
+                  <CardTitle className="group-hover:text-primary transition-colors">
+                    {project.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={800}
+                    height={400}
+                    className="object-cover w-full h-48"
+                  />
+                  <CardDescription>{project.description}</CardDescription>
+                </CardContent>
+                <CardFooter className="flex justify-between">
+                  <Button asChild>
+                    <a
+                      href={project.demoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View Demo
+                    </a>
+                  </Button>
+                  <Button variant="outline" asChild>
+                    <a
+                      href={project.codeLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View Code
+                    </a>
+                  </Button>
+                </CardFooter>
+              </Card>
+            </AnimatedCard>
           ))}
         </div>
       </div>
