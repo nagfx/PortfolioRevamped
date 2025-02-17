@@ -42,6 +42,14 @@ export function About() {
             </CardHeader>
             <CardContent>
               <ul className="space-y-4">
+              <li>
+                  <CardTitle className="text-lg">
+                    Software Engineer fullstack developer IC4/L4
+                  </CardTitle>
+                  <CardDescription>
+                    Confidential | 2024 - present
+                  </CardDescription>
+                </li>
                 <li>
                   <CardTitle className="text-lg">
                     Software Engineer fullstack developer

@@ -33,9 +33,9 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center">
+      <div className="px-4 flex h-14 items-center justify-between">
         <NavigationMenu>
-          <NavigationMenuList>
+          <NavigationMenuList className="gap-6">
             <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -66,12 +66,18 @@ export function Navbar() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        <div className="flex-1" />
-        <div className="flex items-center space-x-2 mr-6">
-          <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-          <Switch checked={theme === "dark"} onCheckedChange={handleThemeToggle} />
-          <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-          <span className="sr-only">Toggle theme</span>
+
+        <div className="flex items-center gap-2">
+          <div className="flex items-center space-x-2 border-l pl-6">
+            <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+            <Switch 
+              checked={theme === "dark"} 
+              onCheckedChange={handleThemeToggle}
+              className="data-[state=checked]:bg-primary"
+            />
+            <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+            <span className="sr-only">Toggle theme</span>
+          </div>
         </div>
       </div>
     </header>
