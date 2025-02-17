@@ -18,13 +18,8 @@ export function Navbar() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
 
-  // Set light theme as default on initial load
   React.useEffect(() => {
     setMounted(true);
-
-    // Force initial theme to light
-    document.documentElement.classList.remove("dark");
-    setTheme("light");
   }, []);
 
   if (!mounted) {
@@ -34,13 +29,6 @@ export function Navbar() {
   const handleThemeToggle = () => {
     const currentTheme = theme === "dark" ? "light" : "dark";
     setTheme(currentTheme);
-
-    // Update the document class based on the toggle
-    if (currentTheme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
   };
 
   return (

@@ -3,21 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --star-color: 100, 149, 237; /* Cornflower blue for day mode */
-  --background-day: 135, 206, 235; /* Sky blue for day mode */
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-    --star-color: 255, 255, 255; /* White color for night mode */
-    --background-night: 0, 0, 0; /* Black for night mode */
-  }
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+  --star-color: 255, 255, 255;
+  --background-night: 0, 0, 0;
 }
 
 @layer base {

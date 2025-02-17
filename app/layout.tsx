@@ -21,9 +21,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="dark">
+      <head>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              document.documentElement.classList.add('dark');
+              localStorage.setItem('theme', 'dark');
+            })();
+          `,
+        }} />
+      </head>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           <div className="flex flex-col min-h-screen">
             <Navbar />
             <main className="flex-grow">{children}</main>
