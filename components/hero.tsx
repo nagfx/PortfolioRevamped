@@ -25,20 +25,20 @@ export function Hero() {
               initial="initial"
               animate="animate"
               transition={{ staggerChildren: 0.1 }}
-              className="flex flex-wrap"
+              className="flex flex-wrap gap-2 justify-center md:justify-start"
             >
-              {/* Animate each letter of "Hi, I'm " */}
-              {"Hi, I'm ".split('').map((char, index) => (
-                <motion.span
-                  key={index}
-                  variants={letterAnimation}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="text-3xl sm:text-4xl md:text-5xl lg:text-8xl"
-                >
-                  {char}
-                </motion.span>
-              ))}
-              {/* Animate "Naman Iqbal" with gradient effect */}
+              <div className="flex flex-wrap gap-[0.2rem]">
+                {"Hi, I'm ".split('').map((char, index) => (
+                  <motion.span
+                    key={index}
+                    variants={letterAnimation}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    className="text-3xl sm:text-4xl md:text-5xl lg:text-8xl"
+                  >
+                    {char}
+                  </motion.span>
+                ))}
+              </div>
               <motion.h1
                 variants={fadeInUp}
                 transition={{ duration: 0.5, delay: 0.5 }}
